@@ -7,22 +7,12 @@ class CustomerCare{
 		Scanner input = new Scanner(System.in);
 
 
-		String menu = """	
-	WELCOME TO NOKIA - CHRIS EDITION
 
-	For English - Press 1
 
-	""";
-
-	System.out.print(menu);
-	int generalMenuChoice =  input.nextInt();
-
-//this is when the user enter 1
-
-	switch(generalMenuChoice){
-		case  1 -> {System.out.println("English Menu"); 
 
 		String englishMenu = """
+
+		WELCOME TO CHRIS NOKIA
 
 	Press 1 -  Phonebok
 	Press 2 -  Messages
@@ -48,6 +38,8 @@ class CustomerCare{
     case 1 -> {
         System.out.println("Phonebook Menu");
 
+
+
         String phoneBookMenu = """
         Press 1 - Search
         Press 2 - Service Nos
@@ -59,18 +51,83 @@ class CustomerCare{
         Press 8 - Options
         Press 9 - Speed dials
         Press 10 - Voice tags
+        Press 11 - Exit
         """;
 
         System.out.println(phoneBookMenu);
         int phonebookMenuChoice = input.nextInt();
 
+
 switch(phonebookMenuChoice){
+
+	case 1 -> {
+     System.out.println("Search");
+	System.exit(0);
+
+		}
+
+	case 2 -> {
+     System.out.println("Service Nos");
+	System.exit(0);
+
+		}
+
+	case 3 -> {
+     System.out.println("Add name");
+	System.exit(0);
+
+		}
+
+	case 4 -> {
+     System.out.println("erase");
+	System.exit(0);
+
+		}
+
+	case 5 -> {
+     System.out.println("Edit");
+	System.exit(0);
+
+		}
+
+	case 6 -> {
+     System.out.println("Assign Tone");
+	System.exit(0);
+
+		}
+
+	case 7 -> {
+     System.out.println("send b'board");
+	System.exit(0);
+
+		}
+
 	case 8 -> {
      System.out.println("Option Menu");
  System.out.println("1. type of view");
  System.out.println("2. Memory status");
 
 		}
+
+	case 9 -> {
+     System.out.println("Speed dials");
+	System.exit(0);
+
+		}
+
+	case 10 -> {
+     System.out.println("Voice tags");
+	System.exit(0);
+
+		}
+
+	case 11 -> {
+     System.exit(0);
+
+		}
+
+	
+
 	}
     }
 
@@ -96,6 +153,43 @@ switch(phonebookMenuChoice){
 
 
 switch(messagesMenuChoice){
+
+	case 1 -> {
+     System.out.println("Write messages");
+	System.exit(0);
+
+		}
+
+	case 2 -> {
+     System.out.println("inbox");
+	System.exit(0);
+
+		}
+
+	case 3 -> {
+     System.out.println("Outbox");
+	System.exit(0);
+
+		}
+
+	case 4 -> {
+     System.out.println("Picture messages");
+	System.exit(0);
+
+		}
+
+	case 5 -> {
+     System.out.println("Templates");
+	System.exit(0);
+
+		}
+
+	case 6 -> {
+     System.out.println("Smileys");
+	System.exit(0);
+
+		}
+
 	case 7 -> {
      System.out.println("Message settings Menu");
         String Menu = """
@@ -114,6 +208,7 @@ switch(messagessettinsChoice){
  System.out.println("2. Message sent as");
  System.out.println("3. Message validity");
 
+
 		}
 	case 2 -> {
      System.out.println("common Menu");
@@ -129,10 +224,14 @@ switch(messagessettinsChoice){
 //case 2 close is below
     }
 
+
     case 3 -> {
         System.out.println("Chat");
+	System.exit(0);
 
     }
+
+
 
     case 4 -> {
         System.out.println("Call Register Menu");
@@ -153,18 +252,46 @@ switch(messagessettinsChoice){
         int callRegisterMenuChoice = input.nextInt();
 
 switch(callRegisterMenuChoice){
+
+	case 1 -> {
+     System.out.println("Missed calls");
+	System.exit(0);
+
+		}
+
+	case 2 -> {
+     System.out.println("Recieved calls");
+	System.exit(0);
+
+		}
+
+	case 3 -> {
+     System.out.println("Dialled numbers");
+	System.exit(0);
+
+		}
+
+	case 4 -> {
+     System.out.println("Erase recent call list");
+	System.exit(0);
+
+		}
+
+
 	case 5 -> {
      System.out.println("Show call duration Menu");
         String showCallDurationMenu = """
-        1 - last call duration
-        2 - All call duration
-        3 - Recieved calls duration
-        4 - Dialled calls duration
-        5 - Clear timers
+        press 1 - last call duration
+	press 2 - All call duration
+        press 3 - Recieved calls duration
+        press 4 - Dialled calls duration
+        press 5 - Clear timers
         """;
 
         System.out.println(showCallDurationMenu);
 		}
+
+
 	case 6 -> {
      System.out.println("Show call costs Menu");
         String showCallCostsMenu = """
@@ -174,8 +301,11 @@ switch(callRegisterMenuChoice){
         """;
 
         System.out.println(showCallCostsMenu);
+	System.exit(0);
 
 		}
+
+
 	case 7 -> {
      System.out.println("call cost settings Menu");
         String callCostSettingsnMenu = """
@@ -315,9 +445,11 @@ switch(settingsMenuChoice){
     }
     // add more cases here...
 }
-}
 
 
-}
-}
-}
+
+
+		}
+
+
+	}
