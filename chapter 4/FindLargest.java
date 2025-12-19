@@ -6,11 +6,11 @@ public class FindLargest {
         Scanner input = new Scanner(System.in);
 
         int number;
-        int largest = Integer.MIN_VALUE;
+        int largest = 0;
 
-        for (int counter = 1; counter <= 10; counter++) {
+        for (int num = 1; num <= 10; num++) {
 
-            System.out.print("Enter score " + counter + ": ");
+            System.out.print("Enter number " + num + ": ");
             number = input.nextInt();
 
             if (number > largest) {
@@ -18,6 +18,6 @@ public class FindLargest {
             }
         }
 
-        System.out.printf("The largest number is %d\n", largest);
+        System.out.printf("The largest number is %d%n", largest);
     }
 }

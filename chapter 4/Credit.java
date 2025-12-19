@@ -12,7 +12,7 @@ int number;
 	System.out.print("Enter account number: ");
 	number = input.nextInt();
 
-	while(count != -1){
+	while(count != 0){
 	
 	System.out.print("input Beginning balance: ");
 	int beginningBalance = input.nextInt();
@@ -35,7 +35,7 @@ int number;
 		System.out.println("Credit limit is exceeded");
 	}
 
-	System.out.print("Enter account number (or -1 to quit): ");
+	System.out.print("Enter account number (or 0 to quit): ");
 	number = input.nextInt();
 
 }
