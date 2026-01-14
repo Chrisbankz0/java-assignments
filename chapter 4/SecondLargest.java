@@ -25,7 +25,7 @@ public static void main(String[]  args){
 	}
 
 	System.out.printf("Largest number is: %d%n", largest);
-	System.out.printf("Largest number is: %d%n", secondLargest);
+	System.out.printf(" Second Largest number is: %d%n", secondLargest);
 
 }
 }

@@ -29,7 +29,7 @@ public static void main(String[] args){
 
 	System.out.printf("The gallon per miles is: %.2f%n", total);
 	
-	System.out.printf("The total is of both miles and gallon is: %f%n", totalmpg);
+	System.out.printf("The total is of both miles and gallon is: %.2f%n", totalmpg);
 
 	}
 
