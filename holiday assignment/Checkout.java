@@ -93,7 +93,6 @@ public static void main(String[]  args){
 
 	System.out.print("How much did the Customer give you? ");
 	double amountPaid = input.nextDouble();
-
 	input.nextLine();
 
 	double balance = amountPaid - biilTotal;

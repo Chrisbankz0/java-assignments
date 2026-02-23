@@ -32,5 +32,5 @@ int numberOfPayment;
 
 	System.out.printf("Your monthly payment is $%,.2f%n", monthlyPayment);
 
-}
+ }
 }

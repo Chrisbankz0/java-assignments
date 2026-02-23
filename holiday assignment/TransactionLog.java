@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class TransactionLog {
 
-        static int accountBalance = 0;
+        static double accountBalance = 0;
         static ArrayList<String> transactions = new ArrayList<>();
 
     public static void deposit(Scanner input) {
 	System.out.print("Enter amount to deposit: ");
-	int amount = input.nextInt();
+	double amount = input.nextDouble();
 
 	if(amount > 0){
 		accountBalance += amount;
@@ -19,13 +19,13 @@ public class TransactionLog {
 		}
 	else{
 		System.out.println("Invalid deposit amount");
-	}
+		}
     }
 
 
     public static void withdraw(Scanner input) {
 	System.out.print("Enter amount to withdraw: ");
-	int amount = input.nextInt();
+	double amount = input.nextDouble();
 
 	if (amount > 0 && amount <= accountBalance) {
 		accountBalance -= amount;
