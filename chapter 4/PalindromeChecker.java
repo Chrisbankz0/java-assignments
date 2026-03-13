@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class PalindromeChecker{
 
     public static void main(String[]args){
-    Scanner chideraCollector = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
     int number;
 
 while (true) {
 
     System.out.print("Enter a five-digit integer: ");
-    number = chideraCollector.nextInt();
+    number = input.nextInt();
 
 if (number >= 10000 && number <= 99999){
     break;
